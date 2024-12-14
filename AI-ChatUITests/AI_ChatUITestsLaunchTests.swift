@@ -7,9 +7,9 @@
 
 import XCTest
 
-final class AI_ChatUITestsLaunchTests: XCTestCase {
+final class AIChatUITestsLaunchTests: XCTestCase {
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+    override static var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
 
