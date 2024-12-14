@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0FE070922D0D4BFE007E02D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0708B2D0D4BFE007E02D2 /* Preview Assets.xcassets */; };
+		0FE070932D0D4BFE007E02D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0708F2D0D4BFE007E02D2 /* Assets.xcassets */; };
+		0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0708E2D0D4BFE007E02D2 /* AI_ChatApp.swift */; };
+		0FE070952D0D4BFE007E02D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070902D0D4BFE007E02D2 /* ContentView.swift */; };
+		0FE070982D0D4C02007E02D2 /* AI_ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070962D0D4C02007E02D2 /* AI_ChatTests.swift */; };
+		0FE0709C2D0D4C05007E02D2 /* AI_ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070992D0D4C05007E02D2 /* AI_ChatUITests.swift */; };
+		0FE0709D2D0D4C05007E02D2 /* AI_ChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0709A2D0D4C05007E02D2 /* AI_ChatUITestsLaunchTests.swift */; };
+		0FE070A12D0D4C2A007E02D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE070A02D0D4C2A007E02D2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0FE0706F2D0D48CA007E02D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +38,16 @@
 		0FE0705D2D0D48C8007E02D2 /* AI-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE0706E2D0D48CA007E02D2 /* AI-ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-ChatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE070782D0D48CA007E02D2 /* AI-ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE0708B2D0D4BFE007E02D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FE0708D2D0D4BFE007E02D2 /* AI_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AI_Chat.entitlements; sourceTree = "<group>"; };
+		0FE0708E2D0D4BFE007E02D2 /* AI_ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_ChatApp.swift; sourceTree = "<group>"; };
+		0FE0708F2D0D4BFE007E02D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FE070902D0D4BFE007E02D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FE070962D0D4C02007E02D2 /* AI_ChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_ChatTests.swift; sourceTree = "<group>"; };
+		0FE070992D0D4C05007E02D2 /* AI_ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_ChatUITests.swift; sourceTree = "<group>"; };
+		0FE0709A2D0D4C05007E02D2 /* AI_ChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_ChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FE070A02D0D4C2A007E02D2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0FE0705F2D0D48C8007E02D2 /* AI-Chat */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AI-Chat";
-			sourceTree = "<group>";
-		};
-		0FE070712D0D48CA007E02D2 /* AI-ChatTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AI-ChatTests";
-			sourceTree = "<group>";
-		};
-		0FE0707B2D0D48CA007E02D2 /* AI-ChatUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AI-ChatUITests";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0FE0705A2D0D48C8007E02D2 /* Frameworks */ = {
@@ -75,9 +77,9 @@
 		0FE070542D0D48C8007E02D2 = {
 			isa = PBXGroup;
 			children = (
-				0FE0705F2D0D48C8007E02D2 /* AI-Chat */,
-				0FE070712D0D48CA007E02D2 /* AI-ChatTests */,
-				0FE0707B2D0D48CA007E02D2 /* AI-ChatUITests */,
+				0FE070912D0D4BFE007E02D2 /* AI-Chat */,
+				0FE070972D0D4C02007E02D2 /* AI-ChatTests */,
+				0FE0709B2D0D4C05007E02D2 /* AI-ChatUITests */,
 				0FE0705E2D0D48C8007E02D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +92,60 @@
 				0FE070782D0D48CA007E02D2 /* AI-ChatUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0FE0708C2D0D4BFE007E02D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FE0708B2D0D4BFE007E02D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FE070912D0D4BFE007E02D2 /* AI-Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0FE0709E2D0D4C0D007E02D2 /* Core */,
+				0FE0708C2D0D4BFE007E02D2 /* Preview Content */,
+				0FE0708D2D0D4BFE007E02D2 /* AI_Chat.entitlements */,
+				0FE0708E2D0D4BFE007E02D2 /* AI_ChatApp.swift */,
+				0FE0708F2D0D4BFE007E02D2 /* Assets.xcassets */,
+				0FE070902D0D4BFE007E02D2 /* ContentView.swift */,
+			);
+			path = "AI-Chat";
+			sourceTree = "<group>";
+		};
+		0FE070972D0D4C02007E02D2 /* AI-ChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070962D0D4C02007E02D2 /* AI_ChatTests.swift */,
+			);
+			path = "AI-ChatTests";
+			sourceTree = "<group>";
+		};
+		0FE0709B2D0D4C05007E02D2 /* AI-ChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070992D0D4C05007E02D2 /* AI_ChatUITests.swift */,
+				0FE0709A2D0D4C05007E02D2 /* AI_ChatUITestsLaunchTests.swift */,
+			);
+			path = "AI-ChatUITests";
+			sourceTree = "<group>";
+		};
+		0FE0709E2D0D4C0D007E02D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0FE0709F2D0D4C19007E02D2 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0FE0709F2D0D4C19007E02D2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070A02D0D4C2A007E02D2 /* LaunchScreen.storyboard */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0FE0705F2D0D48C8007E02D2 /* AI-Chat */,
 			);
 			name = "AI-Chat";
 			packageProductDependencies = (
@@ -130,9 +183,6 @@
 			dependencies = (
 				0FE070702D0D48CA007E02D2 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				0FE070712D0D48CA007E02D2 /* AI-ChatTests */,
-			);
 			name = "AI-ChatTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +202,6 @@
 			);
 			dependencies = (
 				0FE0707A2D0D48CA007E02D2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0FE0707B2D0D48CA007E02D2 /* AI-ChatUITests */,
 			);
 			name = "AI-ChatUITests";
 			packageProductDependencies = (
@@ -212,6 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE070A12D0D4C2A007E02D2 /* LaunchScreen.storyboard in Resources */,
+				0FE070922D0D4BFE007E02D2 /* Preview Assets.xcassets in Resources */,
+				0FE070932D0D4BFE007E02D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
+				0FE070952D0D4BFE007E02D2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE070982D0D4C02007E02D2 /* AI_ChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE0709C2D0D4C05007E02D2 /* AI_ChatUITests.swift in Sources */,
+				0FE0709D2D0D4C05007E02D2 /* AI_ChatUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,13 +451,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -437,13 +492,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
