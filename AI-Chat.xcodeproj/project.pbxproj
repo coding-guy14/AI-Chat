@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */; };
 		0FE070922D0D4BFE007E02D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0708B2D0D4BFE007E02D2 /* Preview Assets.xcassets */; };
 		0FE070932D0D4BFE007E02D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0708F2D0D4BFE007E02D2 /* Assets.xcassets */; };
 		0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0708E2D0D4BFE007E02D2 /* AI_ChatApp.swift */; };
@@ -17,6 +18,10 @@
 		0FE070A12D0D4C2A007E02D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE070A02D0D4C2A007E02D2 /* LaunchScreen.storyboard */; };
 		0FE070A42D0D54FF007E02D2 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070A32D0D54FF007E02D2 /* AppView.swift */; };
 		0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070A62D0D603C007E02D2 /* AppViewBuilder.swift */; };
+		0FE070AA2D0D624B007E02D2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070A92D0D624B007E02D2 /* TabBarView.swift */; };
+		0FE070AD2D0DB1BD007E02D2 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070AC2D0DB1BD007E02D2 /* ExploreView.swift */; };
+		0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070AF2D0DB1EA007E02D2 /* ChatsView.swift */; };
+		0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE070B22D0DB218007E02D2 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0FE0705D2D0D48C8007E02D2 /* AI-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE0706E2D0D48CA007E02D2 /* AI-ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-ChatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE070782D0D48CA007E02D2 /* AI-ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +57,10 @@
 		0FE070A02D0D4C2A007E02D2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FE070A32D0D54FF007E02D2 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		0FE070A62D0D603C007E02D2 /* AppViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewBuilder.swift; sourceTree = "<group>"; };
+		0FE070A92D0D624B007E02D2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0FE070AC2D0DB1BD007E02D2 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		0FE070AF2D0DB1EA007E02D2 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		0FE070B22D0DB218007E02D2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F94CCFC2D0DB72F0077D558 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		0FE070542D0D48C8007E02D2 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +158,12 @@
 			isa = PBXGroup;
 			children = (
 				0FE070A52D0D6017007E02D2 /* AppView */,
+				0FE070AE2D0DB1DB007E02D2 /* Chats */,
+				0FE070AB2D0DB1AE007E02D2 /* Explore */,
+				0F94CCFC2D0DB72F0077D558 /* Welcome */,
+				0FE070B12D0DB20C007E02D2 /* Profile */,
 				0FE0709F2D0D4C19007E02D2 /* Root */,
+				0FE070A82D0D622D007E02D2 /* TabBar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -160,6 +183,38 @@
 				0FE070A62D0D603C007E02D2 /* AppViewBuilder.swift */,
 			);
 			path = AppView;
+			sourceTree = "<group>";
+		};
+		0FE070A82D0D622D007E02D2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070A92D0D624B007E02D2 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0FE070AB2D0DB1AE007E02D2 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070AC2D0DB1BD007E02D2 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		0FE070AE2D0DB1DB007E02D2 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070AF2D0DB1EA007E02D2 /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		0FE070B12D0DB20C007E02D2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0FE070B22D0DB218007E02D2 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +355,7 @@
 		0FE070A22D0D4F04007E02D2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -311,7 +366,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -z \"$CI\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    # Check if running in a SwiftUI preview\n    if [ \"$XCODE_RUNNING_FOR_PREVIEWS\" != \"1\" ]; then\n        if which swiftlint > /dev/null; then\n            swiftlint --fix && swiftlint\n        else\n            echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n        fi\n    fi\nelse \n    # Running Xcode Cloud\n    echo \"Running in Xcode Cloud. Skipping SwiftLint.\"\nfi\n";
 			showEnvVarsInLog = 0;
@@ -323,9 +378,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */,
+				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0FE070952D0D4BFE007E02D2 /* ContentView.swift in Sources */,
+				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
+				0FE070AA2D0D624B007E02D2 /* TabBarView.swift in Sources */,
+				0FE070AD2D0DB1BD007E02D2 /* ExploreView.swift in Sources */,
 				0FE070A42D0D54FF007E02D2 /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
