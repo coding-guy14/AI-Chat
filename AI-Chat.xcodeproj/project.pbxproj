@@ -39,6 +39,8 @@
 		0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E22D0EBFFB009C353A /* ChatModel.swift */; };
 		0FEF59E52D0EC257009C353A /* Date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E42D0EC252009C353A /* Date+EXT.swift */; };
 		0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */; };
+		0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E82D0EC79B009C353A /* ChatRowCellView.swift */; };
+		0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		0FEF59E22D0EBFFB009C353A /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		0FEF59E42D0EC252009C353A /* Date+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EXT.swift"; sourceTree = "<group>"; };
 		0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModel.swift; sourceTree = "<group>"; };
+		0FEF59E82D0EC79B009C353A /* ChatRowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowCellView.swift; sourceTree = "<group>"; };
+		0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowCellViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +344,8 @@
 				0FEF59D72D0E8E29009C353A /* CarouselView.swift */,
 				0FEF59D92D0E965C009C353A /* CategoryCellView.swift */,
 				0FEF59DB2D0EAE3E009C353A /* CustomListCellView.swift */,
+				0FEF59E82D0EC79B009C353A /* ChatRowCellView.swift */,
+				0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -569,10 +575,12 @@
 				0FEF59DC2D0EAE3E009C353A /* CustomListCellView.swift in Sources */,
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
+				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,
 				0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */,
 				0FEF59BB2D0DBC99009C353A /* AppState.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
+				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
 				0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */,
 				0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
