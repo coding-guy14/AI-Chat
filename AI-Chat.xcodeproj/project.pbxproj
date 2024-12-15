@@ -41,6 +41,8 @@
 		0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */; };
 		0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59E82D0EC79B009C353A /* ChatRowCellView.swift */; };
 		0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */; };
+		0FEF59EF2D0ED190009C353A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59EE2D0ED190009C353A /* UserModel.swift */; };
+		0FEF59F12D0EDA93009C353A /* Color+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59F02D0EDA93009C353A /* Color+EXT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModel.swift; sourceTree = "<group>"; };
 		0FEF59E82D0EC79B009C353A /* ChatRowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowCellView.swift; sourceTree = "<group>"; };
 		0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowCellViewBuilder.swift; sourceTree = "<group>"; };
+		0FEF59EE2D0ED190009C353A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0FEF59F02D0EDA93009C353A /* Color+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+EXT.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0FEF59E42D0EC252009C353A /* Date+EXT.swift */,
+				0FEF59F02D0EDA93009C353A /* Color+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 		0FEF59D22D0E76A4009C353A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF59EC2D0ED17A009C353A /* User */,
 				0FEF59E02D0EBFD7009C353A /* Chat */,
 				0FEF59D32D0E76B4009C353A /* Avatar */,
 			);
@@ -387,8 +393,6 @@
 		0FEF59E02D0EBFD7009C353A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				0FEF59E22D0EBFFB009C353A /* ChatModel.swift */,
-				0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */,
 				0FEF59E12D0EBFEA009C353A /* Models */,
 			);
 			path = Chat;
@@ -397,6 +401,24 @@
 		0FEF59E12D0EBFEA009C353A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF59E22D0EBFFB009C353A /* ChatModel.swift */,
+				0FEF59E62D0EC27A009C353A /* ChatMessageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0FEF59EC2D0ED17A009C353A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59ED2D0ED184009C353A /* Models */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0FEF59ED2D0ED184009C353A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59EE2D0ED190009C353A /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -577,6 +599,7 @@
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,
 				0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */,
+				0FEF59F12D0EDA93009C353A /* Color+EXT.swift in Sources */,
 				0FEF59BB2D0DBC99009C353A /* AppState.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
@@ -588,6 +611,7 @@
 				0FE070AA2D0D624B007E02D2 /* TabBarView.swift in Sources */,
 				0FEF59D12D0E73F3009C353A /* HeroCellView.swift in Sources */,
 				0FEF59D82D0E8E29009C353A /* CarouselView.swift in Sources */,
+				0FEF59EF2D0ED190009C353A /* UserModel.swift in Sources */,
 				0FEF59BE2D0DBE1D009C353A /* SettingsView.swift in Sources */,
 				0FEF59C82D0E4D02009C353A /* Constants.swift in Sources */,
 				0FE070AD2D0DB1BD007E02D2 /* ExploreView.swift in Sources */,

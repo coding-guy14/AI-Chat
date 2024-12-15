@@ -37,11 +37,11 @@ struct ChatMessageModel {
         return seenByIds.contains(userId)
     }
     
-    static var mock: ChatMessageModel {
+    static var mock: Self {
         mocks[0]
     }
     
-    static var mocks: [ChatMessageModel] {
+    static var mocks: [Self] {
         [
             ChatMessageModel(id: UUID().uuidString, chatId: "chat_1", authorId: "user_1", content: "Hello, how are you?", seenByIds: ["user_2", "user_3"], dateCreated: .now),
             ChatMessageModel(id: UUID().uuidString, chatId: "chat_2", authorId: "user_2", content: "I'm doing well, thanks for asking!", seenByIds: ["user_1"], dateCreated: .now.addingTimeInterval(minutes: -5)),
