@@ -26,4 +26,5 @@ struct ExploreView: View {
 
 #Preview {
     ExploreView()
+        .padding(8)
 }
