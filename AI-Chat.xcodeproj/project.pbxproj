@@ -33,6 +33,7 @@
 		0FEF59D12D0E73F3009C353A /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D02D0E73F3009C353A /* HeroCellView.swift */; };
 		0FEF59D62D0E76D1009C353A /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D52D0E76D1009C353A /* AvatarModel.swift */; };
 		0FEF59D82D0E8E29009C353A /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D72D0E8E29009C353A /* CarouselView.swift */; };
+		0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D92D0E965C009C353A /* CategoryCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		0FEF59D02D0E73F3009C353A /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
 		0FEF59D52D0E76D1009C353A /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 		0FEF59D72D0E8E29009C353A /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		0FEF59D92D0E965C009C353A /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 			children = (
 				0FEF59D02D0E73F3009C353A /* HeroCellView.swift */,
 				0FEF59D72D0E8E29009C353A /* CarouselView.swift */,
+				0FEF59D92D0E965C009C353A /* CategoryCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */,
 				0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */,
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
+				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59BB2D0DBC99009C353A /* AppState.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
