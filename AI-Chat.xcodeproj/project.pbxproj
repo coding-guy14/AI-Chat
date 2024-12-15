@@ -43,6 +43,10 @@
 		0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */; };
 		0FEF59EF2D0ED190009C353A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59EE2D0ED190009C353A /* UserModel.swift */; };
 		0FEF59F12D0EDA93009C353A /* Color+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59F02D0EDA93009C353A /* Color+EXT.swift */; };
+		0FEF59F42D0F9698009C353A /* SwiftfulUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 0FEF59F32D0F9698009C353A /* SwiftfulUtilities */; };
+		0FEF59F62D0F96B7009C353A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59F52D0F96B1009C353A /* Utilities.swift */; };
+		0FEF59F92D0F98B0009C353A /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59F82D0F98B0009C353A /* CreateAccountView.swift */; };
+		0FEF59FC2D0F995E009C353A /* SignInWithAppButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59FB2D0F9958009C353A /* SignInWithAppButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,9 @@
 		0FEF59EA2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowCellViewBuilder.swift; sourceTree = "<group>"; };
 		0FEF59EE2D0ED190009C353A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0FEF59F02D0EDA93009C353A /* Color+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+EXT.swift"; sourceTree = "<group>"; };
+		0FEF59F52D0F96B1009C353A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0FEF59F82D0F98B0009C353A /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		0FEF59FB2D0F9958009C353A /* SignInWithAppButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FEF59C12D0E4B9F009C353A /* SDWebImageSwiftUI in Frameworks */,
+				0FEF59F42D0F9698009C353A /* SwiftfulUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +238,7 @@
 			children = (
 				0FE070A52D0D6017007E02D2 /* AppView */,
 				0FE070AE2D0DB1DB007E02D2 /* Chats */,
+				0FEF59F72D0F986E009C353A /* CreateAccount */,
 				0FE070AB2D0DB1AE007E02D2 /* Explore */,
 				0F94CCFF2D0DB8CB0077D558 /* Onboarding */,
 				0F94CCFC2D0DB72F0077D558 /* Welcome */,
@@ -303,6 +312,7 @@
 		0FEF59C22D0E4BAE009C353A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF59FA2D0F994C009C353A /* Buttons */,
 				0FEF59DD2D0EB0F3009C353A /* ViewModifiers */,
 				0FEF59CF2D0E73E7009C353A /* Views */,
 				0FEF59C32D0E4BBE009C353A /* Images */,
@@ -321,6 +331,7 @@
 		0FEF59C62D0E4CEF009C353A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF59F52D0F96B1009C353A /* Utilities.swift */,
 				0FEF59C72D0E4D02009C353A /* Constants.swift */,
 			);
 			path = Utilities;
@@ -423,6 +434,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0FEF59F72D0F986E009C353A /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59F82D0F98B0009C353A /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		0FEF59FA2D0F994C009C353A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59FB2D0F9958009C353A /* SignInWithAppButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -442,6 +469,7 @@
 			name = "AI-Chat";
 			packageProductDependencies = (
 				0FEF59C02D0E4B9F009C353A /* SDWebImageSwiftUI */,
+				0FEF59F32D0F9698009C353A /* SwiftfulUtilities */,
 			);
 			productName = "AI-Chat";
 			productReference = 0FE0705D2D0D48C8007E02D2 /* AI-Chat.app */;
@@ -521,6 +549,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				0FEF59BF2D0E4B9F009C353A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				0FEF59F22D0F9698009C353A /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0FE0705E2D0D48C8007E02D2 /* Products */;
@@ -598,6 +627,7 @@
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,
+				0FEF59F92D0F98B0009C353A /* CreateAccountView.swift in Sources */,
 				0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */,
 				0FEF59F12D0EDA93009C353A /* Color+EXT.swift in Sources */,
 				0FEF59BB2D0DBC99009C353A /* AppState.swift in Sources */,
@@ -606,6 +636,8 @@
 				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
 				0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */,
 				0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */,
+				0FEF59F62D0F96B7009C353A /* Utilities.swift in Sources */,
+				0FEF59FC2D0F995E009C353A /* SignInWithAppButtonView.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
 				0FEF59DF2D0EB110009C353A /* ButtonViewModifiers.swift in Sources */,
 				0FE070AA2D0D624B007E02D2 /* TabBarView.swift in Sources */,
@@ -991,6 +1023,14 @@
 				minimumVersion = 3.1.3;
 			};
 		};
+		0FEF59F22D0F9698009C353A /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUtilities.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -998,6 +1038,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0FEF59BF2D0E4B9F009C353A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		0FEF59F32D0F9698009C353A /* SwiftfulUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FEF59F22D0F9698009C353A /* XCRemoteSwiftPackageReference "SwiftfulUtilities" */;
+			productName = SwiftfulUtilities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -62,8 +62,9 @@ struct ProfileView: View {
         Section {
             if myAvatars.isEmpty {
                 Group {
-                    if isLoading { ProgressView() }
-                    else { Text("Click + to create an avatar") }
+                    if isLoading {
+                        ProgressView()
+                    } else { Text("Click + to create an avatar") }
                 }
                 .padding(50)
                 .frame(maxWidth: .infinity)
