@@ -7,6 +7,7 @@ file_length:
 
 disabled_rules:
   - trailing_whitespace
+  - switch_case_alignment
 
 excluded:
   - .git

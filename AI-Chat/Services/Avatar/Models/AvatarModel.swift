@@ -74,7 +74,8 @@ struct AvatarDescriptionBuilder {
     }
     
     var characterDescription: String {
-        "A \(option.rawValue) that is \(action.rawValue) in the \(location.rawValue)"
+        let prefix = option.statsWithAVowel ? "An" : "A"
+        return "\(prefix) \(option.rawValue) that is \(action.rawValue) in the \(location.rawValue)"
     }
 }
 
@@ -83,6 +84,13 @@ enum CharacterOption: String, CaseIterable, Hashable {
     
     static var `default`: Self {
         .man
+    }
+    
+    var statsWithAVowel: Bool {
+        switch self {
+            case .alien: return true
+            default: return false
+        }
     }
 }
 
