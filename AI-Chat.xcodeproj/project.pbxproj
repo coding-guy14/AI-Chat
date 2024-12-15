@@ -31,6 +31,7 @@
 		0FEF59CB2D0E5172009C353A /* OnboardingIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59CA2D0E5172009C353A /* OnboardingIntroView.swift */; };
 		0FEF59CE2D0E532C009C353A /* OnboardingColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59CD2D0E532C009C353A /* OnboardingColorView.swift */; };
 		0FEF59D12D0E73F3009C353A /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D02D0E73F3009C353A /* HeroCellView.swift */; };
+		0FEF59D62D0E76D1009C353A /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF59D52D0E76D1009C353A /* AvatarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		0FEF59CA2D0E5172009C353A /* OnboardingIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroView.swift; sourceTree = "<group>"; };
 		0FEF59CD2D0E532C009C353A /* OnboardingColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingColorView.swift; sourceTree = "<group>"; };
 		0FEF59D02D0E73F3009C353A /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
+		0FEF59D52D0E76D1009C353A /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		0FE070912D0D4BFE007E02D2 /* AI-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF59D22D0E76A4009C353A /* Services */,
 				0FE0709E2D0D4C0D007E02D2 /* Core */,
 				0F94CD032D0DB9810077D558 /* Extensions */,
 				0FEF59C22D0E4BAE009C353A /* Components */,
@@ -321,6 +324,30 @@
 				0FEF59D02D0E73F3009C353A /* HeroCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0FEF59D22D0E76A4009C353A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59D32D0E76B4009C353A /* Avatar */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0FEF59D32D0E76B4009C353A /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59D42D0E76BB009C353A /* Models */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		0FEF59D42D0E76BB009C353A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF59D52D0E76D1009C353A /* AvatarModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +517,7 @@
 			files = (
 				0FEF59C52D0E4BCD009C353A /* ImageLoaderView.swift in Sources */,
 				0FEF59CE2D0E532C009C353A /* OnboardingColorView.swift in Sources */,
+				0FEF59D62D0E76D1009C353A /* AvatarModel.swift in Sources */,
 				0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */,
 				0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */,
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
