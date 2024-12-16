@@ -59,6 +59,7 @@
 		0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A152D103E6F009C353A /* ProfileModalView.swift */; };
 		0FEF5A182D104868009C353A /* ModalSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A172D104868009C353A /* ModalSupportView.swift */; };
 		0FEF5A1B2D10560D009C353A /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A1A2D10560D009C353A /* CategoryList.swift */; };
+		0FEF5A1E2D106844009C353A /* NavigationPathOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A1D2D106844009C353A /* NavigationPathOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		0FEF5A152D103E6F009C353A /* ProfileModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalView.swift; sourceTree = "<group>"; };
 		0FEF5A172D104868009C353A /* ModalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSupportView.swift; sourceTree = "<group>"; };
 		0FEF5A1A2D10560D009C353A /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		0FEF5A1D2D106844009C353A /* NavigationPathOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 		0FE0709E2D0D4C0D007E02D2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF5A1C2D10683D009C353A /* Routing */,
 				0FE070A52D0D6017007E02D2 /* AppView */,
 				0FEF5A192D1055F3009C353A /* CategoryList */,
 				0FEF5A042D0FAD59009C353A /* Chat */,
@@ -542,6 +545,14 @@
 			path = CategoryList;
 			sourceTree = "<group>";
 		};
+		0FEF5A1C2D10683D009C353A /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF5A1D2D106844009C353A /* NavigationPathOption.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -732,6 +743,7 @@
 				0FEF59FF2D0F9C92009C353A /* CreateAvatarView.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
+				0FEF5A1E2D106844009C353A /* NavigationPathOption.swift in Sources */,
 				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
 				0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */,
 				0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */,
