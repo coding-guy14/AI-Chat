@@ -56,6 +56,8 @@
 		0FEF5A0E2D0FEA67009C353A /* TextValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A0D2D0FEA5F009C353A /* TextValidationHelper.swift */; };
 		0FEF5A112D100E15009C353A /* AnyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A102D100E0A009C353A /* AnyAlert.swift */; };
 		0FEF5A132D100E3E009C353A /* Binding+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A122D100E39009C353A /* Binding+EXT.swift */; };
+		0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A152D103E6F009C353A /* ProfileModalView.swift */; };
+		0FEF5A182D104868009C353A /* ModalSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A172D104868009C353A /* ModalSupportView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		0FEF5A0D2D0FEA5F009C353A /* TextValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidationHelper.swift; sourceTree = "<group>"; };
 		0FEF5A102D100E0A009C353A /* AnyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAlert.swift; sourceTree = "<group>"; };
 		0FEF5A122D100E39009C353A /* Binding+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+EXT.swift"; sourceTree = "<group>"; };
+		0FEF5A152D103E6F009C353A /* ProfileModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalView.swift; sourceTree = "<group>"; };
+		0FEF5A172D104868009C353A /* ModalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSupportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +337,7 @@
 		0FEF59C22D0E4BAE009C353A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0FEF5A142D103E61009C353A /* Modals */,
 				0FEF5A0F2D100DD8009C353A /* Alerts */,
 				0FEF59FA2D0F994C009C353A /* Buttons */,
 				0FEF59DD2D0EB0F3009C353A /* ViewModifiers */,
@@ -517,6 +522,15 @@
 			path = Alerts;
 			sourceTree = "<group>";
 		};
+		0FEF5A142D103E61009C353A /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF5A152D103E6F009C353A /* ProfileModalView.swift */,
+				0FEF5A172D104868009C353A /* ModalSupportView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,6 +708,7 @@
 				0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */,
 				0FEF5A132D100E3E009C353A /* Binding+EXT.swift in Sources */,
 				0FEF59DC2D0EAE3E009C353A /* CustomListCellView.swift in Sources */,
+				0FEF5A182D104868009C353A /* ModalSupportView.swift in Sources */,
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,
@@ -706,6 +721,7 @@
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
 				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
+				0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */,
 				0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */,
 				0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */,
 				0FEF59F62D0F96B7009C353A /* Utilities.swift in Sources */,
