@@ -37,10 +37,10 @@ struct UserModel {
     
     static var mocks: [Self] {
         [
-            UserModel(userId: UUID().uuidString, dateCreated: .now, didCompletedOnboarding: true, profileColorHex: "#33A1FF"),
-            UserModel(userId: UUID().uuidString, dateCreated: .now.addingTimeInterval(days: -1), didCompletedOnboarding: false, profileColorHex: "#FF5733"),
-            UserModel(userId: UUID().uuidString, dateCreated: .now.addingTimeInterval(hours: -2, days: -3), didCompletedOnboarding: true, profileColorHex: "#7DFF33"),
-            UserModel(userId: UUID().uuidString, dateCreated: .now.addingTimeInterval(hours: -4, days: -5), didCompletedOnboarding: nil, profileColorHex: "#FF33A1")
+            UserModel(userId: "user_1", dateCreated: .now, didCompletedOnboarding: true, profileColorHex: "#33A1FF"),
+            UserModel(userId: "user_2", dateCreated: .now.addingTimeInterval(days: -1), didCompletedOnboarding: false, profileColorHex: "#FF5733"),
+            UserModel(userId: "user_3", dateCreated: .now.addingTimeInterval(hours: -2, days: -3), didCompletedOnboarding: true, profileColorHex: "#7DFF33"),
+            UserModel(userId: "user_4", dateCreated: .now.addingTimeInterval(hours: -4, days: -5), didCompletedOnboarding: nil, profileColorHex: "#FF33A1")
         ]
     }
 }
