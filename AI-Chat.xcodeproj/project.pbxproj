@@ -58,6 +58,7 @@
 		0FEF5A132D100E3E009C353A /* Binding+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A122D100E39009C353A /* Binding+EXT.swift */; };
 		0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A152D103E6F009C353A /* ProfileModalView.swift */; };
 		0FEF5A182D104868009C353A /* ModalSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A172D104868009C353A /* ModalSupportView.swift */; };
+		0FEF5A1B2D10560D009C353A /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF5A1A2D10560D009C353A /* CategoryList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		0FEF5A122D100E39009C353A /* Binding+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+EXT.swift"; sourceTree = "<group>"; };
 		0FEF5A152D103E6F009C353A /* ProfileModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalView.swift; sourceTree = "<group>"; };
 		0FEF5A172D104868009C353A /* ModalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSupportView.swift; sourceTree = "<group>"; };
+		0FEF5A1A2D10560D009C353A /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				0FE070A52D0D6017007E02D2 /* AppView */,
+				0FEF5A192D1055F3009C353A /* CategoryList */,
 				0FEF5A042D0FAD59009C353A /* Chat */,
 				0FE070AE2D0DB1DB007E02D2 /* Chats */,
 				0FEF59F72D0F986E009C353A /* CreateAccount */,
@@ -531,6 +534,14 @@
 			path = Modals;
 			sourceTree = "<group>";
 		};
+		0FEF5A192D1055F3009C353A /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				0FEF5A1A2D10560D009C353A /* CategoryList.swift */,
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -709,6 +720,7 @@
 				0FEF5A132D100E3E009C353A /* Binding+EXT.swift in Sources */,
 				0FEF59DC2D0EAE3E009C353A /* CustomListCellView.swift in Sources */,
 				0FEF5A182D104868009C353A /* ModalSupportView.swift in Sources */,
+				0FEF5A1B2D10560D009C353A /* CategoryList.swift in Sources */,
 				0FE070B02D0DB1EA007E02D2 /* ChatsView.swift in Sources */,
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,

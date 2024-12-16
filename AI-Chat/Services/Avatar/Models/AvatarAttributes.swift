@@ -12,6 +12,16 @@ enum CharacterOption: String, CaseIterable, Hashable {
         .man
     }
     
+    var plural: String {
+        switch self {
+            case .man: return "men"
+            case .woman: return "women"
+            case .alien: return "aliens"
+            case .dog: return "dogs"
+            case .cat: return "cats"
+        }
+    }
+    
     var statsWithAVowel: Bool {
         switch self {
             case .alien: return true
