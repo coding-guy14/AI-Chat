@@ -10,6 +10,7 @@
 		0F8197BE2D11152A002AAB03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */; };
 		0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C12D111779002AAB03 /* FirebaseAnalytics */; };
 		0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C32D1117A3002AAB03 /* FirebaseAuth */; };
+		0F8197C72D112160002AAB03 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */; };
 		0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */; };
 		0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */; };
 		0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD042D0DB99A0077D558 /* View+EXT.swift */; };
@@ -84,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbardingCompletedView.swift; sourceTree = "<group>"; };
 		0F94CD042D0DB99A0077D558 /* View+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EXT.swift"; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F8197C52D112157002AAB03 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		0F94CCFC2D0DB72F0077D558 /* Welcome */ = {
@@ -419,6 +429,7 @@
 		0FEF59D22D0E76A4009C353A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0F8197C52D112157002AAB03 /* Auth */,
 				0FEF59EC2D0ED17A009C353A /* User */,
 				0FEF59E02D0EBFD7009C353A /* Chat */,
 				0FEF59D32D0E76B4009C353A /* Avatar */,
@@ -769,6 +780,7 @@
 				0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */,
 				0FEF59F62D0F96B7009C353A /* Utilities.swift in Sources */,
 				0FEF59FC2D0F995E009C353A /* SignInWithAppButtonView.swift in Sources */,
+				0F8197C72D112160002AAB03 /* FirebaseAuthService.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
 				0FEF5A012D0FA1EA009C353A /* AsyncCallToActionButton.swift in Sources */,
 				0FEF59DF2D0EB110009C353A /* ButtonViewModifiers.swift in Sources */,
