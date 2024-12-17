@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    @Environment(UserManager.self) private var userManager
     @Environment(AuthManager.self) private var authManager
     @Environment(\.dismiss) private var dismiss
     @Environment(AppState.self) private var appState
@@ -43,26 +44,26 @@ struct SettingsView: View {
         Section {
             if isAnonymousUser {
                 Text("Save & back-up account")
-                    .rowFormatting()
                     .anyButton(.highlight) {
                         onCreateAccountPressed()
                     }
+                    .rowFormatting()
                     .removeListRowFormatting()
             } else {
                 Text("Sign Out")
-                    .rowFormatting()
                     .anyButton(.highlight) {
                         onSignOutPressed()
                     }
+                    .rowFormatting()
                     .removeListRowFormatting()
             }
             
             Text("Delete Account")
                 .foregroundStyle(.red)
-                .rowFormatting()
                 .anyButton(.highlight) {
                     onDeleteAccountPressed()
                 }
+                .rowFormatting()
                 .removeListRowFormatting()
         } header: {
             Text("Account")
@@ -79,11 +80,11 @@ struct SettingsView: View {
                         .badgeButton()
                 }
             }
-            .rowFormatting()
             .anyButton(.highlight) {
                 onSignOutPressed()
             }
             .disabled(!isPremium)
+            .rowFormatting()
             .removeListRowFormatting()
         } header: {
             Text("Purchases")
@@ -129,6 +130,7 @@ struct SettingsView: View {
         Task {
             do {
                 try authManager.signOut()
+                userManager.signOut()
                 dismissScreen()
             } catch {
                 showAlert = AnyAlert(error: error)
@@ -150,6 +152,7 @@ struct SettingsView: View {
         Task {
             do {
                 try await authManager.deleteAccount()
+                try await userManager.deleteUser()
                 dismissScreen()
             } catch {
                 showAlert = AnyAlert(error: error)
@@ -185,17 +188,20 @@ fileprivate extension View {
 #Preview("No Auth") {
     SettingsView()
         .environment(AuthManager(service: MockAuthService(user: nil)))
+        .environment(UserManager(service: MockUserService(user: nil)))
         .environment(AppState())
 }
 
 #Preview("Anonymous") {
     SettingsView()
         .environment(AuthManager(service: MockAuthService(user: .mock(isAnonymous: true))))
+        .environment(UserManager(service: MockUserService(user: .mock)))
         .environment(AppState())
 }
 
 #Preview("Not Anonymous") {
     SettingsView()
         .environment(AuthManager(service: MockAuthService(user: .mock(isAnonymous: false))))
+        .environment(UserManager(service: MockUserService(user: .mock)))
         .environment(AppState())
 }
