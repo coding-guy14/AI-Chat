@@ -25,6 +25,10 @@ struct AnyAlert: Sendable {
         self.subtitle = subtitle
         self.buttons = buttons ?? { AnyView(Button("OK") {}) }
     }
+    
+    init(error: Error) {
+        self.init(title: error.localizedDescription)
+    }
 }
 
 extension View {
