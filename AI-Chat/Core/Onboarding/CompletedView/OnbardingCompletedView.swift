@@ -56,6 +56,6 @@ struct OnbardingCompletedView: View {
 
 #Preview {
     OnbardingCompletedView(selectedColor: .mint)
-        .environment(UserManager(service: MockUserService()))
+        .environment(UserManager(services: MockUserServices()))
         .environment(AppState())
 }

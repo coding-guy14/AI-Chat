@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F63AC742D122DC3003CA1E0 /* LocalUserPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC732D122DC3003CA1E0 /* LocalUserPersistance.swift */; };
+		0F63AC762D122DD5003CA1E0 /* FileManagerUserPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC752D122DD5003CA1E0 /* FileManagerUserPersistance.swift */; };
+		0F63AC782D122DE7003CA1E0 /* MockUserPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC772D122DE7003CA1E0 /* MockUserPersistance.swift */; };
+		0F63AC7A2D122E02003CA1E0 /* RemoteUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC792D122E02003CA1E0 /* RemoteUserService.swift */; };
+		0F63AC7C2D122E13003CA1E0 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC7B2D122E13003CA1E0 /* MockUserService.swift */; };
+		0F63AC7E2D122E48003CA1E0 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC7D2D122E48003CA1E0 /* FirebaseUserService.swift */; };
+		0F63AC802D122E66003CA1E0 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC7F2D122E66003CA1E0 /* UserServices.swift */; };
 		0F8197BE2D11152A002AAB03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */; };
 		0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C12D111779002AAB03 /* FirebaseAnalytics */; };
 		0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C32D1117A3002AAB03 /* FirebaseAuth */; };
@@ -20,6 +27,7 @@
 		0F8197D92D114F7E002AAB03 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197D82D114F7E002AAB03 /* UserManager.swift */; };
 		0F8197DB2D115302002AAB03 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197DA2D115302002AAB03 /* FirebaseFirestore */; };
 		0F8197DE2D116242002AAB03 /* SwiftfulFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197DD2D116242002AAB03 /* SwiftfulFirestore */; };
+		0F8197E02D118BF9002AAB03 /* FileManager.EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197DF2D118BF9002AAB03 /* FileManager.EXT.swift */; };
 		0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */; };
 		0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */; };
 		0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD042D0DB99A0077D558 /* View+EXT.swift */; };
@@ -93,6 +101,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F63AC732D122DC3003CA1E0 /* LocalUserPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserPersistance.swift; sourceTree = "<group>"; };
+		0F63AC752D122DD5003CA1E0 /* FileManagerUserPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUserPersistance.swift; sourceTree = "<group>"; };
+		0F63AC772D122DE7003CA1E0 /* MockUserPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPersistance.swift; sourceTree = "<group>"; };
+		0F63AC792D122E02003CA1E0 /* RemoteUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserService.swift; sourceTree = "<group>"; };
+		0F63AC7B2D122E13003CA1E0 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
+		0F63AC7D2D122E48003CA1E0 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
+		0F63AC7F2D122E66003CA1E0 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
@@ -101,6 +116,7 @@
 		0F8197D32D114478002AAB03 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		0F8197D52D11467C002AAB03 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		0F8197D82D114F7E002AAB03 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0F8197DF2D118BF9002AAB03 /* FileManager.EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.EXT.swift; sourceTree = "<group>"; };
 		0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbardingCompletedView.swift; sourceTree = "<group>"; };
 		0F94CD042D0DB99A0077D558 /* View+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EXT.swift"; sourceTree = "<group>"; };
@@ -190,6 +206,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F63AC712D122DA4003CA1E0 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0F63AC752D122DD5003CA1E0 /* FileManagerUserPersistance.swift */,
+				0F63AC732D122DC3003CA1E0 /* LocalUserPersistance.swift */,
+				0F63AC772D122DE7003CA1E0 /* MockUserPersistance.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0F63AC722D122DA7003CA1E0 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0F63AC7D2D122E48003CA1E0 /* FirebaseUserService.swift */,
+				0F63AC7B2D122E13003CA1E0 /* MockUserService.swift */,
+				0F63AC792D122E02003CA1E0 /* RemoteUserService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		0F8197BF2D111560002AAB03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +265,9 @@
 		0F8197D72D114F74002AAB03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0F8197D82D114F7E002AAB03 /* UserManager.swift */,
+				0F63AC7F2D122E66003CA1E0 /* UserServices.swift */,
+				0F63AC712D122DA4003CA1E0 /* Local */,
+				0F63AC722D122DA7003CA1E0 /* Remote */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -266,6 +304,7 @@
 				0FEF5A122D100E39009C353A /* Binding+EXT.swift */,
 				0FEF59E42D0EC252009C353A /* Date+EXT.swift */,
 				0FEF59F02D0EDA93009C353A /* Color+EXT.swift */,
+				0F8197DF2D118BF9002AAB03 /* FileManager.EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -530,8 +569,9 @@
 		0FEF59EC2D0ED17A009C353A /* User */ = {
 			isa = PBXGroup;
 			children = (
-				0F8197D72D114F74002AAB03 /* Services */,
+				0F8197D82D114F7E002AAB03 /* UserManager.swift */,
 				0FEF59ED2D0ED184009C353A /* Models */,
+				0F8197D72D114F74002AAB03 /* Services */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -829,6 +869,7 @@
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
 				0FEF5A1E2D106844009C353A /* NavigationPathOption.swift in Sources */,
+				0F63AC7A2D122E02003CA1E0 /* RemoteUserService.swift in Sources */,
 				0F8197D42D114478002AAB03 /* MockAuthService.swift in Sources */,
 				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
 				0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */,
@@ -851,9 +892,16 @@
 				0FEF5A0A2D0FAE71009C353A /* ChatBubbleView.swift in Sources */,
 				0FEF59C82D0E4D02009C353A /* Constants.swift in Sources */,
 				0FE070AD2D0DB1BD007E02D2 /* ExploreView.swift in Sources */,
+				0F63AC742D122DC3003CA1E0 /* LocalUserPersistance.swift in Sources */,
+				0F63AC7C2D122E13003CA1E0 /* MockUserService.swift in Sources */,
 				0FE070A42D0D54FF007E02D2 /* AppView.swift in Sources */,
+				0F63AC802D122E66003CA1E0 /* UserServices.swift in Sources */,
 				0FEF5A0C2D0FB118009C353A /* ChatBubbleViewBuilder.swift in Sources */,
+				0F8197E02D118BF9002AAB03 /* FileManager.EXT.swift in Sources */,
+				0F63AC762D122DD5003CA1E0 /* FileManagerUserPersistance.swift in Sources */,
 				0FEF59CB2D0E5172009C353A /* OnboardingIntroView.swift in Sources */,
+				0F63AC7E2D122E48003CA1E0 /* FirebaseUserService.swift in Sources */,
+				0F63AC782D122DE7003CA1E0 /* MockUserPersistance.swift in Sources */,
 				0F8197D22D11445E002AAB03 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
