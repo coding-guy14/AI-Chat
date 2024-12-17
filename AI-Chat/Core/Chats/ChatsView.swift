@@ -30,7 +30,7 @@ struct ChatsView: View {
         Section {
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 8) {
-                    ForEach(recentAvatars, id:\.self) { avatar in
+                    ForEach(recentAvatars, id: \.self) { avatar in
                         if let imageName = avatar.profileImageName {
                             VStack {
                                 ImageLoaderView(urlString: imageName)
