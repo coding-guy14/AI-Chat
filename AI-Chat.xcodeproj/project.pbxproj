@@ -14,6 +14,8 @@
 		0F8197CA2D11256D002AAB03 /* UserAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */; };
 		0F8197CC2D1125AE002AAB03 /* UserAuthInfo+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197CB2D1125A9002AAB03 /* UserAuthInfo+Firebase.swift */; };
 		0F8197CF2D1127BF002AAB03 /* SignInAppleAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197CE2D1127BF002AAB03 /* SignInAppleAsync */; };
+		0F8197D22D11445E002AAB03 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197D12D11445E002AAB03 /* AuthService.swift */; };
+		0F8197D42D114478002AAB03 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8197D32D114478002AAB03 /* MockAuthService.swift */; };
 		0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */; };
 		0F94CD022D0DB8EC0077D558 /* OnbardingCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */; };
 		0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94CD042D0DB99A0077D558 /* View+EXT.swift */; };
@@ -91,6 +93,8 @@
 		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
 		0F8197CB2D1125A9002AAB03 /* UserAuthInfo+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAuthInfo+Firebase.swift"; sourceTree = "<group>"; };
+		0F8197D12D11445E002AAB03 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0F8197D32D114478002AAB03 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		0F94CCFD2D0DB7440077D558 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0F94CD012D0DB8EC0077D558 /* OnbardingCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbardingCompletedView.swift; sourceTree = "<group>"; };
 		0F94CD042D0DB99A0077D558 /* View+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EXT.swift"; sourceTree = "<group>"; };
@@ -189,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				0F8197C82D11256A002AAB03 /* Models */,
-				0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */,
+				0F8197D02D11443E002AAB03 /* Services */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -201,6 +205,16 @@
 				0F8197CB2D1125A9002AAB03 /* UserAuthInfo+Firebase.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0F8197D02D11443E002AAB03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F8197D12D11445E002AAB03 /* AuthService.swift */,
+				0F8197D32D114478002AAB03 /* MockAuthService.swift */,
+				0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0F94CCFC2D0DB72F0077D558 /* Welcome */ = {
@@ -793,6 +807,7 @@
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
 				0F94CCFE2D0DB7440077D558 /* WelcomeView.swift in Sources */,
 				0FEF5A1E2D106844009C353A /* NavigationPathOption.swift in Sources */,
+				0F8197D42D114478002AAB03 /* MockAuthService.swift in Sources */,
 				0FEF59E92D0EC79B009C353A /* ChatRowCellView.swift in Sources */,
 				0FEF5A162D103E6F009C353A /* ProfileModalView.swift in Sources */,
 				0FEF59E32D0EBFFF009C353A /* ChatModel.swift in Sources */,
@@ -816,6 +831,7 @@
 				0FE070A42D0D54FF007E02D2 /* AppView.swift in Sources */,
 				0FEF5A0C2D0FB118009C353A /* ChatBubbleViewBuilder.swift in Sources */,
 				0FEF59CB2D0E5172009C353A /* OnboardingIntroView.swift in Sources */,
+				0F8197D22D11445E002AAB03 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
