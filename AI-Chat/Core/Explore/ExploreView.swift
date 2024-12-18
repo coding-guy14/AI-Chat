@@ -9,22 +9,56 @@ import SwiftUI
 
 struct ExploreView: View {
     
-    let avatar = AvatarModel.mock
-    @State private var featuredAvatars: [AvatarModel] = AvatarModel.mocks
+    @Environment(AvatarManager.self) private var avatarManager
+    
+    @State private var featuredAvatars: [AvatarModel] = []
     @State private var categories: [CharacterOption] = CharacterOption.allCases
-    @State private var popularAvatars: [AvatarModel] = AvatarModel.mocks
+    @State private var popularAvatars: [AvatarModel] = []
     
     @State private var path: [NavigationPathOption] = []
     
     var body: some View {
         NavigationStack(path: $path) {
             List {
-                featuredSection
-                categorySection
-                popularSection
+                
+                if featuredAvatars.isEmpty && popularAvatars.isEmpty {
+                    ProgressView()
+                        .padding(40)
+                        .frame(maxWidth: .infinity)
+                        .removeListRowFormatting()
+                }
+                
+                if !featuredAvatars.isEmpty {
+                    featuredSection
+                }
+                
+                if !popularAvatars.isEmpty {
+                    categorySection
+                    popularSection
+                }
             }
             .navigationTitle("Explore")
             .navigationDestinationForCoreModule(path: $path)
+            .task { await loadFeaturedAvatars() }
+            .task { await loadPopularAvatars() }
+        }
+    }
+    
+    private func loadFeaturedAvatars() async {
+        guard featuredAvatars.isEmpty else { return }
+        do {
+            featuredAvatars = try await avatarManager.getFeaturedAvatars()
+        } catch {
+            print("Error loading featured avatars: \(error).")
+        }
+    }
+    
+    private func loadPopularAvatars() async {
+        guard popularAvatars.isEmpty else { return }
+        do {
+            popularAvatars = try await avatarManager.getPopularAvatars()
+        } catch {
+            print("Error loading popular avatars: \(error).")
         }
     }
     
@@ -107,5 +141,5 @@ struct ExploreView: View {
 
 #Preview {
     ExploreView()
-    
+        .environment(AvatarManager(service: MockAvatarService()))
 }

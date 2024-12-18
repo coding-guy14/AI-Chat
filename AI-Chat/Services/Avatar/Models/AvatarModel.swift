@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import IdentifiableByString
 
-struct AvatarModel: Codable, Hashable {
+struct AvatarModel: Codable, Hashable, StringIdentifiable {
+    
+    var id: String { avatarId }
     
     let avatarId: String
     let name: String?

@@ -7,47 +7,47 @@
 
 import SwiftUI
 
-protocol AvatarService: Sendable {
-    
-    func createAvatar(avatar: AvatarModel, image: UIImage) async throws
-}
-
-struct MockAvatarService: AvatarService {
-    
-    func createAvatar(avatar: AvatarModel, image: UIImage) async throws {}
-}
-
-import FirebaseFirestore
-import SwiftfulFirestore
-
-struct FirebaseAvatarService: AvatarService {
-    
-    var collection: CollectionReference {
-        Firestore.firestore().collection("avatars")
-    }
-    
-    func createAvatar(avatar: AvatarModel, image: UIImage) async throws {
-        let path = "avatars/\(avatar.avatarId)"
-        let url = try await FirebaseImageUploadService().uploadImage(path: path, image: image)
-        
-        var avatar = avatar
-        avatar.updateProfileImage(imageName: url.absoluteString)
-        
-        try collection.document(avatar.avatarId).setData(from: avatar, merge: true)
-    }
-}
-
 @MainActor
 @Observable
 class AvatarManager {
     
-    private let service: AvatarService
+    private let local: LocalAvatarPersistance
+    private let remote: RemoteAvatarService
     
-    init(service: AvatarService) {
-        self.service = service
+    init(service: RemoteAvatarService, local: LocalAvatarPersistance = MockLocalAvatarPersistance()) {
+        self.remote = service
+        self.local = local
+    }
+    
+    func addRecentAvatar(avatar: AvatarModel) throws {
+        try local.addRecentAvatar(avatar: avatar)
+    }
+    
+    func getRecentAvatars() throws -> [AvatarModel] {
+        try local.getRecentAvatars()
     }
     
     func createAvatar(avatar: AvatarModel, image: UIImage) async throws {
-        try await service.createAvatar(avatar: avatar, image: image)
+        try await remote.createAvatar(avatar: avatar, image: image)
+    }
+    
+    func getAvatar(id: String) async throws -> AvatarModel {
+        try await remote.getAvatar(id: id)
+    }
+    
+    func getFeaturedAvatars() async throws -> [AvatarModel] {
+        try await remote.getFeaturedAvatars()
+    }
+    
+    func getPopularAvatars() async throws -> [AvatarModel] {
+        try await remote.getPopularAvatars()
+    }
+    
+    func getAvatarsForCategory(category: CharacterOption) async throws -> [AvatarModel] {
+        try await remote.getAvatarsForCategory(category: category)
+    }
+    
+    func getAvatarsForAuthor(userId: String) async throws -> [AvatarModel] {
+        try await remote.getAvatarsForAuthor(userId: userId)
     }
 }

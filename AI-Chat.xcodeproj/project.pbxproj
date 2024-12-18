@@ -23,6 +23,14 @@
 		0F63ACD02D12E3B2003CA1E0 /* AvatarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */; };
 		0F63ACD42D12E7FE003CA1E0 /* FirebaseImageUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */; };
 		0F63ACD62D12E812003CA1E0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F63ACD52D12E812003CA1E0 /* FirebaseStorage */; };
+		0F63ACD82D138BB3003CA1E0 /* RemoteAvatarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACD72D138BB3003CA1E0 /* RemoteAvatarService.swift */; };
+		0F63ACDA2D138BBF003CA1E0 /* MockAvatarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACD92D138BBF003CA1E0 /* MockAvatarService.swift */; };
+		0F63ACDC2D138BCF003CA1E0 /* FirebaseAvatarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACDB2D138BCF003CA1E0 /* FirebaseAvatarService.swift */; };
+		0F63ACDE2D138BEA003CA1E0 /* Collection+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACDD2D138BE6003CA1E0 /* Collection+EXT.swift */; };
+		0F63ACE22D139692003CA1E0 /* LocalAvatarPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE12D139692003CA1E0 /* LocalAvatarPersistance.swift */; };
+		0F63ACE42D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE32D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift */; };
+		0F63ACE62D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE52D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift */; };
+		0F63ACE82D1396CD003CA1E0 /* AvatarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE72D1396CD003CA1E0 /* AvatarEntity.swift */; };
 		0F8197BE2D11152A002AAB03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */; };
 		0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C12D111779002AAB03 /* FirebaseAnalytics */; };
 		0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C32D1117A3002AAB03 /* FirebaseAuth */; };
@@ -124,6 +132,14 @@
 		0F63AC8E2D1243AA003CA1E0 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarManager.swift; sourceTree = "<group>"; };
 		0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageUploadService.swift; sourceTree = "<group>"; };
+		0F63ACD72D138BB3003CA1E0 /* RemoteAvatarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAvatarService.swift; sourceTree = "<group>"; };
+		0F63ACD92D138BBF003CA1E0 /* MockAvatarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAvatarService.swift; sourceTree = "<group>"; };
+		0F63ACDB2D138BCF003CA1E0 /* FirebaseAvatarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAvatarService.swift; sourceTree = "<group>"; };
+		0F63ACDD2D138BE6003CA1E0 /* Collection+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+EXT.swift"; sourceTree = "<group>"; };
+		0F63ACE12D139692003CA1E0 /* LocalAvatarPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAvatarPersistance.swift; sourceTree = "<group>"; };
+		0F63ACE32D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalAvatarPersistance.swift; sourceTree = "<group>"; };
+		0F63ACE52D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataLocalAvatarPersistance.swift; sourceTree = "<group>"; };
+		0F63ACE72D1396CD003CA1E0 /* AvatarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarEntity.swift; sourceTree = "<group>"; };
 		0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
@@ -266,6 +282,8 @@
 		0F63ACCE2D12E3A4003CA1E0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0F63ACE02D13967E003CA1E0 /* Local */,
+				0F63ACDF2D139674003CA1E0 /* Remote */,
 				0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */,
 			);
 			path = Services;
@@ -285,6 +303,26 @@
 				0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0F63ACDF2D139674003CA1E0 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACDB2D138BCF003CA1E0 /* FirebaseAvatarService.swift */,
+				0F63ACD92D138BBF003CA1E0 /* MockAvatarService.swift */,
+				0F63ACD72D138BB3003CA1E0 /* RemoteAvatarService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0F63ACE02D13967E003CA1E0 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACE52D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift */,
+				0F63ACE32D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift */,
+				0F63ACE12D139692003CA1E0 /* LocalAvatarPersistance.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		0F8197BF2D111560002AAB03 /* Frameworks */ = {
@@ -362,6 +400,7 @@
 		0F94CD032D0DB9810077D558 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0F63ACDD2D138BE6003CA1E0 /* Collection+EXT.swift */,
 				0FEF5A122D100E39009C353A /* Binding+EXT.swift */,
 				0FEF59E42D0EC252009C353A /* Date+EXT.swift */,
 				0FEF59F02D0EDA93009C353A /* Color+EXT.swift */,
@@ -599,6 +638,7 @@
 		0FEF59D42D0E76BB009C353A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0F63ACE72D1396CD003CA1E0 /* AvatarEntity.swift */,
 				0FEF59D52D0E76D1009C353A /* AvatarModel.swift */,
 				0FEF5A022D0FAC96009C353A /* AvatarAttributes.swift */,
 			);
@@ -911,8 +951,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F63ACE82D1396CD003CA1E0 /* AvatarEntity.swift in Sources */,
 				0FEF59C52D0E4BCD009C353A /* ImageLoaderView.swift in Sources */,
 				0FEF5A112D100E15009C353A /* AnyAlert.swift in Sources */,
+				0F63ACE62D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift in Sources */,
 				0F63AC8F2D1243AA003CA1E0 /* OpenAIService.swift in Sources */,
 				0FEF59CE2D0E532C009C353A /* OnboardingColorView.swift in Sources */,
 				0F8197CA2D11256D002AAB03 /* UserAuthInfo.swift in Sources */,
@@ -921,6 +963,7 @@
 				0FEF5A062D0FAD71009C353A /* ChatView.swift in Sources */,
 				0F8197D62D11467F002AAB03 /* AuthManager.swift in Sources */,
 				0F94CD052D0DB99A0077D558 /* View+EXT.swift in Sources */,
+				0F63ACDE2D138BEA003CA1E0 /* Collection+EXT.swift in Sources */,
 				0FE070B32D0DB218007E02D2 /* ProfileView.swift in Sources */,
 				0FEF5A132D100E3E009C353A /* Binding+EXT.swift in Sources */,
 				0FEF59DC2D0EAE3E009C353A /* CustomListCellView.swift in Sources */,
@@ -931,10 +974,12 @@
 				0FEF59DA2D0E965C009C353A /* CategoryCellView.swift in Sources */,
 				0FEF59EB2D0ECBDF009C353A /* ChatRowCellViewBuilder.swift in Sources */,
 				0FEF5A0E2D0FEA67009C353A /* TextValidationHelper.swift in Sources */,
+				0F63ACDA2D138BBF003CA1E0 /* MockAvatarService.swift in Sources */,
 				0F63AC8D2D124396003CA1E0 /* MockAIService.swift in Sources */,
 				0FEF59F92D0F98B0009C353A /* CreateAccountView.swift in Sources */,
 				0FEF59E72D0EC27F009C353A /* ChatMessageModel.swift in Sources */,
 				0FEF59F12D0EDA93009C353A /* Color+EXT.swift in Sources */,
+				0F63ACE42D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift in Sources */,
 				0FEF59BB2D0DBC99009C353A /* AppState.swift in Sources */,
 				0FEF59FF2D0F9C92009C353A /* CreateAvatarView.swift in Sources */,
 				0FE070942D0D4BFE007E02D2 /* AI_ChatApp.swift in Sources */,
@@ -951,6 +996,7 @@
 				0FEF59FC2D0F995E009C353A /* SignInWithAppButtonView.swift in Sources */,
 				0F8197CC2D1125AE002AAB03 /* UserAuthInfo+Firebase.swift in Sources */,
 				0F8197C72D112160002AAB03 /* FirebaseAuthService.swift in Sources */,
+				0F63ACE22D139692003CA1E0 /* LocalAvatarPersistance.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
 				0F63ACD42D12E7FE003CA1E0 /* FirebaseImageUploadService.swift in Sources */,
 				0F63AC832D123D99003CA1E0 /* AIManager.swift in Sources */,
@@ -967,12 +1013,14 @@
 				0FEF5A0A2D0FAE71009C353A /* ChatBubbleView.swift in Sources */,
 				0FEF59C82D0E4D02009C353A /* Constants.swift in Sources */,
 				0FE070AD2D0DB1BD007E02D2 /* ExploreView.swift in Sources */,
+				0F63ACDC2D138BCF003CA1E0 /* FirebaseAvatarService.swift in Sources */,
 				0F63AC742D122DC3003CA1E0 /* LocalUserPersistance.swift in Sources */,
 				0F63AC7C2D122E13003CA1E0 /* MockUserService.swift in Sources */,
 				0FE070A42D0D54FF007E02D2 /* AppView.swift in Sources */,
 				0F63AC802D122E66003CA1E0 /* UserServices.swift in Sources */,
 				0FEF5A0C2D0FB118009C353A /* ChatBubbleViewBuilder.swift in Sources */,
 				0F8197E02D118BF9002AAB03 /* FileManager.EXT.swift in Sources */,
+				0F63ACD82D138BB3003CA1E0 /* RemoteAvatarService.swift in Sources */,
 				0F63AC762D122DD5003CA1E0 /* FileManagerUserPersistance.swift in Sources */,
 				0FEF59CB2D0E5172009C353A /* OnboardingIntroView.swift in Sources */,
 				0F63AC7E2D122E48003CA1E0 /* FirebaseUserService.swift in Sources */,

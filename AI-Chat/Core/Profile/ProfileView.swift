@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @Environment(AuthManager.self) private var authManager
     @Environment(UserManager.self) private var userManager
+    @Environment(AvatarManager.self) private var avatarManager
     
     @State private var showSettingsView: Bool = false
     @State private var showCreateAvatarView: Bool = false
@@ -47,8 +49,15 @@ struct ProfileView: View {
     
     private func loadData() async {
         currentUser = userManager.currentUser
+        
+        do {
+            let uid = try authManager.getAuthId()
+            myAvatars = try await avatarManager.getAvatarsForAuthor(userId: uid)
+        } catch {
+            print("Failed to fetch user Avatars")
+        }
+        
         isLoading = false
-        myAvatars = AvatarModel.mocks
     }
     
     private var myInfoSection: some View {
@@ -135,6 +144,8 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
+        .environment(AvatarManager(service: MockAvatarService()))
         .environment(UserManager(services: MockUserServices(user: .mock)))
+        .environment(AuthManager(service: MockAuthService(user: .mock(isAnonymous: false))))
         .environment(AppState())
 }
