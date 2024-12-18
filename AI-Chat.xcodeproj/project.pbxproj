@@ -20,6 +20,9 @@
 		0F63AC8B2D124384003CA1E0 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC8A2D124384003CA1E0 /* AIService.swift */; };
 		0F63AC8D2D124396003CA1E0 /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC8C2D124396003CA1E0 /* MockAIService.swift */; };
 		0F63AC8F2D1243AA003CA1E0 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63AC8E2D1243AA003CA1E0 /* OpenAIService.swift */; };
+		0F63ACD02D12E3B2003CA1E0 /* AvatarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */; };
+		0F63ACD42D12E7FE003CA1E0 /* FirebaseImageUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */; };
+		0F63ACD62D12E812003CA1E0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F63ACD52D12E812003CA1E0 /* FirebaseStorage */; };
 		0F8197BE2D11152A002AAB03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */; };
 		0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C12D111779002AAB03 /* FirebaseAnalytics */; };
 		0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C32D1117A3002AAB03 /* FirebaseAuth */; };
@@ -119,6 +122,8 @@
 		0F63AC8A2D124384003CA1E0 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
 		0F63AC8C2D124396003CA1E0 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAIService.swift; sourceTree = "<group>"; };
 		0F63AC8E2D1243AA003CA1E0 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarManager.swift; sourceTree = "<group>"; };
+		0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageUploadService.swift; sourceTree = "<group>"; };
 		0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
@@ -192,6 +197,7 @@
 			files = (
 				0FEF59C12D0E4B9F009C353A /* SDWebImageSwiftUI in Frameworks */,
 				0FEF59F42D0F9698009C353A /* SwiftfulUtilities in Frameworks */,
+				0F63ACD62D12E812003CA1E0 /* FirebaseStorage in Frameworks */,
 				0F63AC862D123E64003CA1E0 /* OpenAI in Frameworks */,
 				0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */,
 				0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */,
@@ -253,6 +259,30 @@
 				0F63AC8E2D1243AA003CA1E0 /* OpenAIService.swift */,
 				0F63AC8C2D124396003CA1E0 /* MockAIService.swift */,
 				0F63AC8A2D124384003CA1E0 /* AIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0F63ACCE2D12E3A4003CA1E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACCF2D12E3AC003CA1E0 /* AvatarManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0F63ACD12D12E7DA003CA1E0 /* ImageUpload */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACD22D12E7F3003CA1E0 /* Services */,
+			);
+			path = ImageUpload;
+			sourceTree = "<group>";
+		};
+		0F63ACD22D12E7F3003CA1E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACD32D12E7F7003CA1E0 /* FirebaseImageUploadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -549,8 +579,9 @@
 			children = (
 				0F63AC812D123D89003CA1E0 /* AI */,
 				0F8197C52D112157002AAB03 /* Auth */,
-				0FEF59EC2D0ED17A009C353A /* User */,
 				0FEF59E02D0EBFD7009C353A /* Chat */,
+				0F63ACD12D12E7DA003CA1E0 /* ImageUpload */,
+				0FEF59EC2D0ED17A009C353A /* User */,
 				0FEF59D32D0E76B4009C353A /* Avatar */,
 			);
 			path = Services;
@@ -560,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				0FEF59D42D0E76BB009C353A /* Models */,
+				0F63ACCE2D12E3A4003CA1E0 /* Services */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
@@ -726,6 +758,7 @@
 				0F8197DA2D115302002AAB03 /* FirebaseFirestore */,
 				0F8197DD2D116242002AAB03 /* SwiftfulFirestore */,
 				0F63AC852D123E64003CA1E0 /* OpenAI */,
+				0F63ACD52D12E812003CA1E0 /* FirebaseStorage */,
 			);
 			productName = "AI-Chat";
 			productReference = 0FE0705D2D0D48C8007E02D2 /* AI-Chat.app */;
@@ -919,9 +952,11 @@
 				0F8197CC2D1125AE002AAB03 /* UserAuthInfo+Firebase.swift in Sources */,
 				0F8197C72D112160002AAB03 /* FirebaseAuthService.swift in Sources */,
 				0FE070A72D0D603C007E02D2 /* AppViewBuilder.swift in Sources */,
+				0F63ACD42D12E7FE003CA1E0 /* FirebaseImageUploadService.swift in Sources */,
 				0F63AC832D123D99003CA1E0 /* AIManager.swift in Sources */,
 				0FEF5A012D0FA1EA009C353A /* AsyncCallToActionButton.swift in Sources */,
 				0FEF59DF2D0EB110009C353A /* ButtonViewModifiers.swift in Sources */,
+				0F63ACD02D12E3B2003CA1E0 /* AvatarManager.swift in Sources */,
 				0FE070AA2D0D624B007E02D2 /* TabBarView.swift in Sources */,
 				0FEF59D12D0E73F3009C353A /* HeroCellView.swift in Sources */,
 				0FEF5A032D0FAC9E009C353A /* AvatarAttributes.swift in Sources */,
@@ -1364,6 +1399,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0F63AC842D123E64003CA1E0 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
+		};
+		0F63ACD52D12E812003CA1E0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F8197C02D111779002AAB03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		0F8197C12D111779002AAB03 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
