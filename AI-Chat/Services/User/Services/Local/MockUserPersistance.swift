@@ -1,5 +1,5 @@
 //
-//  MockUserPersistance.swift
+//  MockUserPersistence.swift
 //  AI-Chat
 //
 //  Created by Soham Divekar on 18/12/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MockUserPersistance: LocalUserPersistance {
+struct MockUserPersistence: LocalUserPersistence {
     
     let currentUser: UserModel?
     

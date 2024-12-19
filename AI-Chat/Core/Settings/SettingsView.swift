@@ -11,6 +11,7 @@ struct SettingsView: View {
     
     @Environment(UserManager.self) private var userManager
     @Environment(AuthManager.self) private var authManager
+    @Environment(AvatarManager.self) private var avatarManager
     @Environment(\.dismiss) private var dismiss
     @Environment(AppState.self) private var appState
     
@@ -151,8 +152,13 @@ struct SettingsView: View {
     private func onDeleteAccountConfirmed() {
         Task {
             do {
-                try await authManager.deleteAccount()
-                try await userManager.deleteUser()
+                let uid = try authManager.getAuthId()
+                async let deleteAuth: () = authManager.deleteAccount()
+                async let deleteUser: () = userManager.deleteUser()
+                async let deleteAvatars: () = avatarManager.removeAuthorIdFromAllUserAvatars(userId: uid)
+                
+                let (_, _, _) = await (try deleteAuth, try deleteUser, try deleteAvatars)
+                
                 dismissScreen()
             } catch {
                 showAlert = AnyAlert(error: error)

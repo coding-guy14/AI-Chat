@@ -1,5 +1,5 @@
 //
-//  SwiftDataLocalAvatarPersistance.swift
+//  SwiftDataLocalAvatarPersistence.swift
 //  AI-Chat
 //
 //  Created by Soham Divekar on 19/12/2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct SwiftDataLocalAvatarPersistance: LocalAvatarPersistance {
+struct SwiftDataLocalAvatarPersistence: LocalAvatarPersistence {
     
     private let container: ModelContainer
     private var mainContext: ModelContext {

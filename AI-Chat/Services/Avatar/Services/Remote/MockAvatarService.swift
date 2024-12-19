@@ -63,6 +63,14 @@ struct MockAvatarService: RemoteAvatarService {
         }
     }
     
+    func removeAuthorIdFromAvatar(avatarId: String) async throws {
+        
+    }
+    
+    func removeAuthorIdFromAllUserAvatars(userId: String) async throws {
+        
+    }
+    
     func incrementAvatarClickCount(avatarId: String) async throws {
         
     }

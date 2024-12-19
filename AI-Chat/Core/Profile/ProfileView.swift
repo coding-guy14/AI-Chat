@@ -20,6 +20,7 @@ struct ProfileView: View {
     @State private var isLoading: Bool = true
     
     @State private var path: [NavigationPathOption] = []
+    @State private var showAlert: AnyAlert?
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -49,6 +50,7 @@ struct ProfileView: View {
         .task {
             await loadData()
         }
+        .showCustomAlert(alert: $showAlert)
     }
     
     private func loadData() async {
@@ -138,7 +140,16 @@ struct ProfileView: View {
     
     private func onDeleteAvatar(indexSet: IndexSet) {
         guard let index = indexSet.first else { return }
-        myAvatars.remove(at: index)
+        let avatar = myAvatars[index]
+        
+        Task {
+            do {
+                try await avatarManager.removeAuthorIdFromAvatar(avatarId: avatar.avatarId)
+                myAvatars.remove(at: index)
+            } catch {
+                showAlert = AnyAlert(title: "Unable to delete avatar", subtitle: "Please try again")
+            }
+        }
     }
     
     private func onAvatarPressed(avatar: AvatarModel) {
