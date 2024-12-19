@@ -41,6 +41,10 @@ struct ExploreView: View {
             .navigationDestinationForCoreModule(path: $path)
             .task { await loadFeaturedAvatars() }
             .task { await loadPopularAvatars() }
+            .refreshable {
+                Task { await loadFeaturedAvatars() }
+                Task { await loadPopularAvatars() }
+            }
         }
     }
     

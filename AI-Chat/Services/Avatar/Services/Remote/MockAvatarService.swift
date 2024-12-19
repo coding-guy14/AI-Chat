@@ -38,4 +38,8 @@ struct MockAvatarService: RemoteAvatarService {
             return result
         }
     }
+    
+    func incrementAvatarClickCount(avatarId: String) async throws {
+        
+    }
 }
