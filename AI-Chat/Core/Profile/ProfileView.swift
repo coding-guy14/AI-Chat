@@ -43,9 +43,9 @@ struct ProfileView: View {
             Task {
                 await loadData()
             }
-        }) {
+        }, content: {
             CreateAvatarView()
-        }
+        })
         .task {
             await loadData()
         }
@@ -148,8 +148,5 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
-        .environment(AvatarManager(service: MockAvatarService()))
-        .environment(UserManager(services: MockUserServices(user: .mock)))
-        .environment(AuthManager(service: MockAuthService(user: .mock(isAnonymous: false))))
-        .environment(AppState())
+        .previewEnvironment()
 }

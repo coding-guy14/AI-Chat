@@ -30,13 +30,19 @@ struct CategoryList: View {
             )
             .removeListRowFormatting()
             
-            if avatars.isEmpty && isLoading {
+            if isLoading {
                 ProgressView()
                     .padding(40)
                     .frame(maxWidth: .infinity)
                     .listRowSeparator(.hidden)
                     .removeListRowFormatting()
-                
+            } else if avatars.isEmpty {
+                Text("No avatars found")
+                    .frame(maxWidth: .infinity)
+                    .padding(40)
+                    .listRowSeparator(.hidden)
+                    .listRowSeparator(.hidden)
+                    .removeListRowFormatting()
             } else {
                 ForEach(avatars, id: \.self) { avatar in
                     CustomListCellView(
@@ -74,9 +80,30 @@ struct CategoryList: View {
     }
 }
 
-#Preview {
+#Preview("Has Data") {
     NavigationStack {
         CategoryList(path: .constant([]))
     }
     .environment(AvatarManager(service: MockAvatarService()))
+}
+
+#Preview("No Data") {
+    NavigationStack {
+        CategoryList(path: .constant([]))
+    }
+    .environment(AvatarManager(service: MockAvatarService(avatars: [])))
+}
+
+#Preview("Slow Loading") {
+    NavigationStack {
+        CategoryList(path: .constant([]))
+    }
+    .environment(AvatarManager(service: MockAvatarService(delay: 10)))
+}
+
+#Preview("Error Loading") {
+    NavigationStack {
+        CategoryList(path: .constant([]))
+    }
+    .environment(AvatarManager(service: MockAvatarService(delay: 5, showError: true)))
 }
