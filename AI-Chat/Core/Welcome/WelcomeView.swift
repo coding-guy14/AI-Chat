@@ -103,4 +103,5 @@ struct WelcomeView: View {
 
 #Preview {
     WelcomeView()
+        .previewEnvironment()
 }

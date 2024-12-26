@@ -31,6 +31,7 @@
 		0F63ACE42D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE32D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift */; };
 		0F63ACE62D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE52D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift */; };
 		0F63ACE82D1396CD003CA1E0 /* AvatarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACE72D1396CD003CA1E0 /* AvatarEntity.swift */; };
+		0F63ACEB2D144293003CA1E0 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63ACEA2D14428F003CA1E0 /* ChatManager.swift */; };
 		0F8197BE2D11152A002AAB03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */; };
 		0F8197C22D111779002AAB03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C12D111779002AAB03 /* FirebaseAnalytics */; };
 		0F8197C42D1117A3002AAB03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8197C32D1117A3002AAB03 /* FirebaseAuth */; };
@@ -140,6 +141,7 @@
 		0F63ACE32D1396A5003CA1E0 /* MockLocalAvatarPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalAvatarPersistance.swift; sourceTree = "<group>"; };
 		0F63ACE52D1396B4003CA1E0 /* SwiftDataLocalAvatarPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataLocalAvatarPersistance.swift; sourceTree = "<group>"; };
 		0F63ACE72D1396CD003CA1E0 /* AvatarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarEntity.swift; sourceTree = "<group>"; };
+		0F63ACEA2D14428F003CA1E0 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		0F8197BD2D11152A002AAB03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F8197C62D112160002AAB03 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		0F8197C92D11256D002AAB03 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
@@ -323,6 +325,14 @@
 				0F63ACE12D139692003CA1E0 /* LocalAvatarPersistance.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		0F63ACE92D144289003CA1E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F63ACEA2D14428F003CA1E0 /* ChatManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0F8197BF2D111560002AAB03 /* Frameworks */ = {
@@ -657,6 +667,7 @@
 		0FEF59E02D0EBFD7009C353A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				0F63ACE92D144289003CA1E0 /* Services */,
 				0FEF59E12D0EBFEA009C353A /* Models */,
 			);
 			path = Chat;
@@ -1022,6 +1033,7 @@
 				0F8197E02D118BF9002AAB03 /* FileManager.EXT.swift in Sources */,
 				0F63ACD82D138BB3003CA1E0 /* RemoteAvatarService.swift in Sources */,
 				0F63AC762D122DD5003CA1E0 /* FileManagerUserPersistance.swift in Sources */,
+				0F63ACEB2D144293003CA1E0 /* ChatManager.swift in Sources */,
 				0FEF59CB2D0E5172009C353A /* OnboardingIntroView.swift in Sources */,
 				0F63AC7E2D122E48003CA1E0 /* FirebaseUserService.swift in Sources */,
 				0F63AC782D122DE7003CA1E0 /* MockUserPersistance.swift in Sources */,
